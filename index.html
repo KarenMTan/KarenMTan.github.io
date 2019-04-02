@@ -5,18 +5,28 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Londrina+Outline" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Bungee+Outline" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400, 400i, 500" rel="stylesheet">
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 <body>
 
+<!--
+<div class="cursor"></div>
+<script type="text/javascript">
+ 		$(document).mousemove(function(e))
+ 		{
+ 			$('.pointer').css({left:e.pageX, top:e.pageY})
+ 		}
+</script>
+-->
 
+<section class="mandatory-scroll-snapping">
 <!-- Introduction -->
 <section class="Introduction">
 	<p id="myName">my name is</p>
 	<span id="Karen">KAREN TAN</span>
-	<p class="align-left">I'm a computer science student @ UCLA</p>
+	<p id="csStudent">I'm a computer science student @ UCLA</p>
 </section>
 
 <!-- SWE Tech Committee -->
@@ -37,12 +47,17 @@
 		<h1>Inspiration</h1>
 		<p >In 2016, I joined Team Sprocket, Diamond Bar High School's FRC (FIRST Robotics Competition) Team as a programming member. My experience on the team inspired me to pursue a career in computer science.</p>
 	</div>
-	<img id="OC" src="TeamPhoto.JPG" alt="Team Sprocket Orange County Regional Winners">
+	<img id="OC" src="TeamPhoto.jpg" alt="Team Sprocket Orange County Regional Winners">
 	<div id="Sprocket2">
 		<h1>Leadership</h1>
-		<p>In 2018, I became Team Sprocket's Engineering Captain, where I led a 50+ person team. That season we won the Orange County Regional and qualified for the World Championships in Houston.</p>
+		<p>In 2017, I became Team Sprocket's Engineering Captain, where I led a 50+ person team. That season we won the Orange County Regional and qualified for the World Championships in Houston.</p>
 	</div>
 </section>
 
+<section id="learnMore">
+	<p>Contact me at <span class="link">ktann.309@gmail.com</span></p>
+	<p>Find more on <a class="link" href="https://github.com/KarenMTan">Github</a> and <a class="link" href="https://www.linkedin.com/in/karen-m-tan/">LinkedIn</a></p>
+</section>
+</section>
 </body>
 </html>

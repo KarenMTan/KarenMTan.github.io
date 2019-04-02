@@ -1,10 +1,10 @@
 body
 {
 	font-family: 'Roboto', sans-serif;
-	/*font-family: 'Courier New', Courier, monospace;*/
+	font-weight: 400;
 }
 
-body::-webkit-scrollbar { 
+body::-webkit-scrollbar {
     display: none; 
 }
 
@@ -18,34 +18,37 @@ button
 	font-size: 25px;
 }
 
+.mandatory-scroll-snapping
+{
+	scroll-snap-type: y mandatory;
+}
+
+.mandatory-scroll-snapping > section
+{
+	scroll-snap-align: start;
+}
+
 .Introduction
 {
-	/*
-	background: repeating-linear-gradient(
-		-35deg,
-  		#000000,
-  		#000000 50px,
-  		#ffffff 50px,
-  		#ffffff 51px
- 	 );
- 	 */
  	background: #121212;
- 	/*height: 100vh;*/
+ 	height: 100vh;
 	margin: -70px -8px 0px -8px;
 	padding: 3vw 6vw;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	color: #f2f2f2;
-	font-size: 8vw;
 }
 
 #myName
 {
+	font-size: 8vw;
 	margin-bottom: -10px;
 }
 
 #Karen
 {
+	align-self: center;
 	text-align: center;
 	margin-bottom: -30px;
 	-webkit-text-fill-color: #121212;
@@ -54,7 +57,7 @@ button
 	font-size: 14vw;
 }
 
-.align-left
+#csStudent
 {
 	margin-left: 50%;
 	font-size: 4vw;
@@ -73,7 +76,6 @@ h1
 	margin: 0px -8px 0px -8px;
 	padding: 3vw 6vw;
 	color: #121212;
-	/*display: flex;*/
 	font-size: 3vw;
 }
 
@@ -95,6 +97,7 @@ h1
 
 #swe-logo
 {
+	background-attachment: fixed;
 	align-self: center;
 	width: 50%;
 }
@@ -107,19 +110,18 @@ img .engineering101
 #engineering101
 {
 	margin-left: 30%;
-	/*margin-bottom: 100px;*/
 	font-size: 2vw;
+	align-self: flex-end;
 }
 
 .FRC
 {
 	position: relative;
 	margin: 0px -8px 0px -8px;
-	padding: 3vh 6vw;
+	padding: 6vh 6vw;
 	background: #121212;
 	font-size: 2vw;
 	color: #f2f2f2;
-	/*flex-direction: column;*/
 }
 
 #OC
@@ -133,23 +135,65 @@ img .engineering101
 
 #Sprocket1
 {
-	/*
-	position: absolute;
-	top: 0px;
-	left: 16px;
-	*/
 	margin-right: 60%;
 	text-align: right;
 }
 
 #Sprocket2
 {
-	/*
-	position: absolute;
-	bottom: 8px;
-	right: 16px;
-	*/
 	margin-left: 60%;
 }
 
+#learnMore
+{
+	background: #f2f2f2;
+	margin: -40px -8px 0px -8px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 15vh 12vh;
+	height: 67vh;
+	color: #121212;
+	font-size: 40px;
+}
 
+.link
+{
+	color: #ba9b01;
+	text-decoration: none;
+}
+
+
+@media screen and (max-width: 800px) 
+{
+	.Introduction
+	{
+		padding: 8vw 8vw;
+		display: flex;
+		flex-direction: row;
+	}
+
+	#myName
+	{
+		align-self: flex-start;
+		font-size: 6vw;
+		margin-bottom: 0;
+	}
+
+	#Karen
+	{
+		-webkit-transform: rotate(90deg);
+		align-self: center;
+		text-align: right;
+		margin-bottom: 0;
+		font-size: 16vw;
+	}
+
+	#csStudent
+	{
+		align-self: flex-end;
+		text-align: right;
+		margin-left: 0;
+		font-size: 4vw;
+	}
+}
