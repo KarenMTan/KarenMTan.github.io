@@ -68,6 +68,8 @@ h1
 	-webkit-text-fill-color: #121212;
 	-webkit-text-stroke-width: 0.1px;
     -webkit-text-stroke-color: #f2f2f2;
+    font-size: 50px;
+    line-height: 25%;
 }
 
 .SWETechCommittee
@@ -152,9 +154,9 @@ img .engineering101
 	flex-direction: column;
 	justify-content: flex-start;
 	padding: 15vh 12vh;
-	height: 67vh;
+	height: 68vh;
 	color: #121212;
-	font-size: 40px;
+	font-size: 6vh;
 }
 
 .link
@@ -166,6 +168,11 @@ img .engineering101
 
 @media screen and (max-width: 800px) 
 {
+	h1
+	{
+		font-size: 30px;
+	}
+	
 	.Introduction
 	{
 		padding: 8vw 8vw;
@@ -177,6 +184,7 @@ img .engineering101
 	{
 		align-self: flex-start;
 		font-size: 6vw;
+		margin-top: 80px;
 		margin-bottom: 0;
 	}
 
@@ -195,5 +203,10 @@ img .engineering101
 		text-align: right;
 		margin-left: 0;
 		font-size: 4vw;
+	}
+
+	#learnMore
+	{
+		font-size: 4vh;
 	}
 }
