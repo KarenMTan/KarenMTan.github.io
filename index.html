@@ -1,63 +1,87 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Karen Tan</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400, 400i, 500" rel="stylesheet">
-	<script
-  src="https://code.jquery.com/jquery-3.3.1.js"></script>
-</head>
-<body>
+    <head>
+        <title>Karen Tan</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet" href="contact.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body id="body">
+        <nav id="menu-bar">
+            <div id="menu-icon" onclick="transformMenu();">
+                +
+            </div>
+            <ul id="navigation" class="pink-bg">
+                <li onclick="transformMenu();">
+                    <a href="#"><span class="nav-hl-yellow">Home&nbsp&nbsp</span></a></li>
+                <li onclick="transformMenu();">
+                    <a href="about.html"><span class="nav-hl-green">About&nbsp&nbsp</span></a></li>
+                <li onclick="transformMenu();">Education</li>
+                <li onclick="transformMenu();">Experience</li>
+                <li onclick="transformMenu();">Tutorials</li>
+                <li onclick="transformMenu();">
+                    <a href="blog.html"><span class="nav-hl-blue">Blog&nbsp&nbsp</span></a></li>
+                <li onclick="transformMenu();">
+                    <a href="index.html#contact"><span class="nav-hl-blue">Contact&nbsp&nbsp</span></a></li>
+            </ul>
+        </nav>
 
-<!--
-<div class="cursor"></div>
-<script type="text/javascript">
- 		$(document).mousemove(function(e))
- 		{
- 			$('.pointer').css({left:e.pageX, top:e.pageY})
- 		}
-</script>
--->
+        <div id="main">
+            <section class="intro yellow-bg">
+                <div>
+                    <h1><span class="half-highlight-pink">Hello, my name is Karen Tan.&nbsp;</span></h1>
+                </div>
+                <!-- <img id="Garden" src="Images/Garden.jpg" alt="Me in Butchart Gardens in Victoria, Canada."> -->
+            </section>
 
-<section class="mandatory-scroll-snapping">
-<!-- Introduction -->
-<section class="Introduction">
-	<p id="myName">my name is</p>
-	<span id="Karen">KAREN TAN</span>
-	<p id="csStudent">I'm a computer science student @ UCLA</p>
-</section>
+            <section class="about green-bg">
+                <h2>
+                    About
+                </h2>
+                <p>
+                    I'm a second year Computer Science major at UCLA. 
+                </p>
+            </section>
 
-<!-- SWE Tech Committee -->
-<section class="SWETechCommittee">
-	<div class="column">
-		<p class="techCommittee">I'm on SWE's Technical Committee</p>
-		<img id="swe-logo" src="swe-logo.png" alt="SWE@UCLA">
-	</div>
-	<div class="column" id="column2">
-		<img id="engineering101Img" src="engineering101_flyer (1).pdf" alt="Engineering 101">
-		<p id="engineering101">This quarter, we're organizing a 7-week workshop series to introduce different fields of engineering to middle and high school girls in the Los Angeles area</p>
-	</div>
-</section>
+            <section id="contact" class="blue-bg">
+                <p>Contact me at 
+                    <span class="contact-highlight">
+                        karenmtan@g.ucla.edu
+                    </span>
+                </p>
+                <p>Find more on my 
+                    <a href="https://www.linkedin.com/in/karen-m-tan/" target="_blank" class="contact-highlight">
+                        LinkedIn
+                    </a> 
+                    and 
+                    <a href="https://github.com/karenmtan" target="_blank" class="contact-highlight">
+                        GitHub
+                    </a>
+                </p>
+            </section>
+        </div>
+    </body>
+    
+    <script>
+        function transformMenu()
+        {
+            var x = document.getElementById("navigation");
+            var y = document.getElementById("menu-bar")
+            y.classList.toggle("transform");
 
-<!-- FRC -->
-<section class="FRC">
-	<div id="Sprocket1">
-		<h1>Inspiration</h1>
-		<p >In 2016, I joined Team Sprocket, Diamond Bar High School's FRC (FIRST Robotics Competition) Team as a programming member. My experience on the team inspired me to pursue a career in computer science.</p>
-	</div>
-	<img id="OC" src="OCRegional2018.jpg" alt="Team Sprocket Orange County Regional Winners">
-	<div id="Sprocket2">
-		<h1>Leadership</h1>
-		<p>In 2017, I became Team Sprocket's Engineering Captain, where I led a 50+ person team. That season we won the Orange County Regional and qualified for the World Championships in Houston.</p>
-	</div>
-</section>
-
-<section id="learnMore">
-	<p>Contact me at <span class="link">ktann.309@gmail.com</span></p>
-	<p>Find more on <a class="link" href="https://github.com/KarenMTan">Github</a> and <a class="link" href="https://www.linkedin.com/in/karen-m-tan/">LinkedIn</a></p>
-</section>
-</section>
-</body>
+            if (x.style.visibility === "visible") {
+                x.style.height = "0"
+                x.style.visibility = "hidden";
+                x.style.opacity = 0;
+            } else {
+                x.style.height = "100%"
+                x.style.visibility = "visible";
+                x.style.opacity = 1;
+            }
+        } 
+    </script>
 </html>

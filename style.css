@@ -1,214 +1,112 @@
-body
-{
-	font-family: 'Roboto', sans-serif;
-	font-weight: 400;
+html {
+    height: 100%;
 }
 
-body::-webkit-scrollbar {
-    display: none; 
+body {
+    height: 100%;
+    background-color:#fffddd; 
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    color: #28292a;
+
+    transition-duration: 0.75s;
 }
 
-button
-{
-	background-color: transparent;
-	border: none;
-	padding: 0;
-	outline: none;
-	color: #f2f2f2;
-	font-size: 25px;
+a {
+    text-decoration: none;
+    color: #28292a;
 }
 
-.mandatory-scroll-snapping
-{
-	scroll-snap-type: y mandatory;
+a:visited {
+    color:#28292a; 
 }
 
-.mandatory-scroll-snapping > section
-{
-	scroll-snap-align: start;
+section, article {
+    display: flex;
+    flex-direction: column;
+    padding: 12vh 10vw;
 }
 
-.Introduction
-{
- 	background: #121212;
- 	height: 100vh;
-	margin: -70px -8px 0px -8px;
-	padding: 3vw 6vw;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	color: #f2f2f2;
+section {
+    height: 76vh;
 }
 
-#myName
-{
-	font-size: 8vw;
-	margin-bottom: -10px;
+article a {
+    text-decoration: underline;
 }
 
-#Karen
-{
-	align-self: center;
-	text-align: center;
-	margin-bottom: -30px;
-	-webkit-text-fill-color: #121212;
-	-webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #f2f2f2;
-	font-size: 14vw;
+.white-bg {
+    background-color: #fffff5;
 }
 
-#csStudent
-{
-	margin-left: 50%;
-	font-size: 4vw;
+.yellow-bg {
+    background-color: #fffddd;
 }
 
-h1
-{
-	-webkit-text-fill-color: #121212;
-	-webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color: #f2f2f2;
-    font-size: 4vw;
-    line-height: 25%;
+.green-bg {
+    background-color: #e9ffe8;
 }
 
-.SWETechCommittee
-{
-	background: #f2f2f2;
-	margin: 0px -8px 0px -8px;
-	padding: 9vw 6vw;
-	color: #121212;
-	font-size: 3vw;
+.pink-bg {
+    background-color: #ffeded;
 }
 
-.column
-{
-	display: flex;
+.blue-bg {
+    background-color: #d4e7ff;
 }
 
-#column2
-{
-	margin-top: 10vh;
+.half-highlight-yellow {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #fdf68b 50%);
 }
 
-.techCommittee
-{
-	padding-right: 10vw;
-	text-align: right;
+.half-highlight-green {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #a7eea4 50%);
 }
 
-#swe-logo
-{
-	background-attachment: fixed;
-	align-self: center;
-	width: 50%;
+.half-highlight-pink {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #ffc2c2 50%);
 }
 
-img .engineering101
-{
-	margin-left: 0;
+.half-highlight-blue {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #89beff 50%);
 }
 
-#engineering101
-{
-	margin-left: 30%;
-	font-size: 2vw;
-	align-self: flex-end;
+.intro {
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 200%;
 }
 
-.FRC
-{
-	position: relative;
-	margin: 0px -8px 0px -8px;
-	padding: 6vh 6vw;
-	background: #121212;
-	font-size: 2vw;
-	color: #f2f2f2;
+#main {
+    /* font-family: 'Libre Caslon Text', serif; */
 }
 
-#OC
-{
-	display: block;
-	padding: 20px;
-	margin-left: auto;
- 	margin-right: auto;
- 	width: 60vw;
+h1, h2 {
+    font-family: 'Libre Caslon Text', serif;
+    margin: 0;
+    font-weight: normal;
 }
 
-#Sprocket1
-{
-	margin-right: 60%;
-	text-align: right;
+h1 {
+    font-size: 200%;
 }
 
-#Sprocket2
-{
-	margin-left: 60%;
+h2 {
+    font-size: 350%;
 }
 
-#learnMore
-{
-	background: #f2f2f2;
-	margin: -40px -8px 0px -8px;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	padding: 15vh 12vh;
-	height: 68vh;
-	color: #121212;
-	font-size: 6vh;
+p {
+    font-size: 130%;
 }
 
-.link
-{
-	color: #ba9b01;
-	text-decoration: none;
+#Garden {
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    height: 400px;
+    object-fit: cover;
 }
 
 
-@media screen and (max-width: 800px) 
-{
-	h1
-	{
-		font-size: 5vw;
-		-webkit-text-stroke-width: 1px;
-	}
-	
-	.Introduction
-	{
-		padding: 8vw 8vw;
-		display: flex;
-		flex-direction: row;
-	}
-
-	#myName
-	{
-		align-self: flex-start;
-		font-size: 6vw;
-		margin-top: 80px;
-		margin-bottom: 0;
-	}
-
-	#Karen
-	{
-		-webkit-transform: rotate(90deg);
-		align-self: center;
-		text-align: right;
-		margin-bottom: 0;
-		font-size: 16vw;
-	}
-
-	#csStudent
-	{
-		align-self: flex-end;
-		text-align: right;
-		margin-left: 0;
-		font-size: 4vw;
-	}
-
-	#learnMore
-	{
-		padding: 15vh 10vh;
-		font-size: 4vh;
-	}
-}

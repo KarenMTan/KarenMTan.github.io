@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Karen Tan</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="menu.css">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body class="blue-bg">
+        <nav id="menu-bar">
+            <div id="menu-icon" onclick="transformMenu();">
+                +
+            </div>
+            <ul id="navigation" class="pink-bg">
+                <li onclick="transformMenu();">
+                    <a href="index.html"><span class="nav-hl-yellow">Home&nbsp&nbsp</span></a></li>
+                <li onclick="transformMenu();">
+                    <a href="about.html"><span class="nav-hl-green">About&nbsp&nbsp</span></a></li>
+                <li onclick="transformMenu();">Education</li>
+                <li onclick="transformMenu();">Experience</li>
+                <li onclick="transformMenu();">Tutorials</li>
+                <li onclick="transformMenu();">
+                    <a href="#"><span class="nav-hl-blue">Blog&nbsp&nbsp</span></a></li>
+                <li onclick="transformMenu();">
+                    <a href="index.html#contact"><span class="nav-hl-blue">Contact&nbsp&nbsp</span></a></li>
+            </ul>
+        </nav>
+
+        <article class="blog">
+            <h2><span class="half-highlight-pink">MarvelOptics.com Scholarship&nbsp&nbsp</span></h2>
+
+            <p>
+                During the summer of 2016, twenty-some high schoolers and I met up every Tuesday and Thursday from 2 to 5 pm. It was the summer I learned about perfect numbers and remainder division and how to count from 0. It was my first year on the high school robotics team.
+            </p> 
+
+            <p>
+                And it quickly spiraled into an obsession. 
+            </p>
+
+            <p>
+                In the middle of Build Season, we would meet twenty, sometimes thirty hours a week. But we were fueled by a passion that made us blind to fatigue and deaf to disbelief. It cultivated in all of us a dream to forge a regional-winning robot out of zip ties and cannibalized robot parts.
+            </p>        
+                    
+            <p>
+                And that season, for the first time since the conception of the team, we qualified for and competed at the World Championships in Houston.
+            </p>
+                   
+            <p>
+                The two years I spent on the team imbued in me an addiction to ambition and a craving for challenge. They inspired me to pursue a career in engineering and computer science.
+            </p>        
+                
+            <p>
+                And since my first introduction, I’ve learned that computer science is much more than programming. This summer, I’m interning at Bendix Commercial Vehicle Systems where I’ve had the opportunity to explore several applications of computer science. I’ve poured hours into designing and developing an in-house tool to help engineers rapidly experiment with camera image sensors. I’ve spent days armed with dry-erase markers, outlining the skeleton of the SafetyDirect mobile app. 
+            </p>
+            
+            <p>
+                These experiences have ignited a passion for design and engineering. They’ve carved a vision to one day invent tools that will impact the world. And just like that dream years ago, I know this passion will surmount any obstacle that dare stand between me and my vision.
+            </p>
+
+            <br>
+
+            <p>Visit Marvel Optics at <a href='https://www.marveloptics.com/' target="_blank" >www.marveloptics.com</a></p>
+
+        </article>
+    </body>
+
+    <script>
+        function transformMenu()
+        {
+            var x = document.getElementById("navigation");
+            var y = document.getElementById("menu-bar")
+            y.classList.toggle("transform");
+    
+            if (x.style.visibility === "visible") {
+                x.style.height = "0"
+                x.style.visibility = "hidden";
+                x.style.opacity = 0;
+            } else {
+                x.style.height = "100%"
+                x.style.visibility = "visible";
+                x.style.opacity = 1;
+            }
+        } 
+    </script>
+</html>
