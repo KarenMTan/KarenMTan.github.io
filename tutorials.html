@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Karen Tan</title>
+        <link rel="stylesheet" href="class_id.css">
+        <link rel="stylesheet" href="html_elements.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+    </head>
+    <body class="green-bg">
+        <nav id="menu-bar">
+            <div id="menu-icon" onclick="transformMenu();">
+                +
+            </div>
+            <ul id="navigation" class="pink-bg">
+                <li onclick="transformMenu();">
+                    <a href="index.html"><span class="nav-hl-yellow">Home&nbsp&nbsp</span></a></li>
+                <li onclick="transformMenu();">
+                    <a href="about.html"><span class="nav-hl-green">About&nbsp&nbsp</span></a></li>
+                <li onclick="transformMenu();">
+                    <a href="education.html"><span class="nav-hl-yellow">Education</span></a></li>
+                <li onclick="transformMenu();">
+                    <a href="experience.html"><span class="nav-hl-blue">Experience</span></a></li>
+                </li>
+                <li onclick="transformMenu();">
+                    <a href="#"><span class="nav-hl-green">Tutorials&nbsp&nbsp</span></a></li>
+                <li onclick="transformMenu();">
+                    <a href="blog.html"><span class="nav-hl-yellow">Blog&nbsp&nbsp</span></a></li>
+                <li onclick="transformMenu();">
+                    <a href="index.html#contact"><span class="nav-hl-blue">Contact&nbsp&nbsp</span></a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1><span class="half-highlight-pink">Tutorials&nbsp</span></h1>
+            
+            <br> <br>
+
+            <h2>Updated: Create Your Own Website Portfolio Workshop Series</h2>
+            <p class="indent">
+                This is a updated version of the <a href="https://drive.google.com/open?id=1TWq_sWkg6rnwuzHewoxD_SJ_W9Av7Y6V" target="_blank">original workshop series</a> DevX and I held during Spring Quarter 2019. Original code can be found on my <a href="https://github.com/KarenMTan">Github</a>.
+            </p>
+
+            <h3>1. Introduction to HTML and CSS</h3>
+            <p>
+                In order to write code, you will need to use a text editor. Text editors like Notepad on Windows or TextEdit on Mac will work. <span class="italic">But</span> using text editors Visual Studio Code or Sublime Text will not only allow you to edit your code, but also detect syntax errors, provide suggestions, and autofill properties. 
+            </p>
+
+            <p>
+                HTML stands for “Hypertext Markup Language.” It’s used in conjunction with CSS and Javascript to create web pages and web applications.
+            </p>
+
+            <p>
+                CSS stands for “Cascading Style Sheet.” While HTML outlines the skeleton of your webpage, CSS focuses on the display and style. You can use CSS to simultaneously control the layout of multiple pages. 
+            </p>
+
+            <p>
+                This first project will demonstrate basic HTML and CSS features. 
+                <ol class="tutorial">
+                    <li>Open text editor</li>
+                    <li>Create a new file</li>
+                    <li>Save as “index.html”</li>
+                    <img src="C:/Users/ktann/Desktop/Create Your Own Website Portfolio/Screenshot (12).png" alt="Demonstration of basic HTML tags">
+                    <li>Insert the <span class="tag">&lt;!DOCTYPE html&gt;</span> declaration
+                        <ul>
+                            <li>The declaration tells your web browser that it should render an HTML document. It is always the first line of your HTML code.</li>  
+                        </ul>
+                    </li>
+                    <li>
+                        Type the <span class="tag">&lt;html&gt;&lt;/html&gt;</span> tags
+                        <ul>
+                            <li>The “&lt;&gt;” and “&lt;/&gt;” represent opening and closing tags respectively. Not all HTML elements have a closing tag, but most do. If you’ve downloaded a development text editor, it may even auto-complete the closing tag for you!</li>
+                        </ul>
+                    </li>
+                    <li>Type the <span class="tag">&lt;head&gt;&lt;/head&gt;</span> tags within the <span class="tag">&lt;html&gt;&lt;/html&gt;</span> tags
+                        <ul>
+                            <li>Information placed within the <span class="tag">&lt;head&gt;&lt;/head&gt;</span> tags is primarily metadata that will not be displayed to the user. For example, the font type or the external CSS style sheets are referenced within the <span class="tag">&lt;head&gt;&lt;/head&gt;</span> tags.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Type the <span class="tag">&lt;body&gt;&lt;/body&gt;</span> tags within the <span class="tag">&lt;html&gt;&lt;/html&gt;</span> tags
+                        <ul>
+                            <li>
+                                Following most heads is a body - HTML is no exception. The <span class="tag">&lt;body&gt;&lt;/body&gt;</span> tags store the web page’s main content.
+                            </li>
+                        </ul>
+                    </li>
+            </ol>
+            </p>
+        </article>
+    </body>
+    <script>
+        function transformMenu()
+        {
+            var x = document.getElementById("navigation");
+            var y = document.getElementById("menu-bar")
+            y.classList.toggle("transform");
+    
+            if (x.style.visibility === "visible") {
+                x.style.height = "0"
+                x.style.visibility = "hidden";
+                x.style.opacity = 0;
+            } else {
+                x.style.height = "100%"
+                x.style.visibility = "visible";
+                x.style.opacity = 1;
+            }
+        } 
+        </script>
+</html>

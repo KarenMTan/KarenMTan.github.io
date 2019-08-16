@@ -1,0 +1,148 @@
+.white-bg {
+    background-color: #fffff5;
+}
+
+.yellow-bg {
+    background-color: #fffddd;
+}
+
+.green-bg {
+    background-color: #e9ffe8;
+}
+
+.pink-bg {
+    background-color: #ffeded;
+}
+
+.blue-bg {
+    background-color: #d4e7ff;
+}
+
+.half-highlight-yellow {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #fdf68b 50%);
+}
+
+.half-highlight-green {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #a7eea4 50%);
+}
+
+.half-highlight-pink {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #ffc2c2 50%);
+}
+
+.half-highlight-blue {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #89beff 50%);
+}
+
+/* Navigation Bar */
+
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+#menu-icon {
+    position: fixed;
+    z-index: 10;
+    padding: 3vh 6vw;
+    cursor: pointer;
+    font-size: 5em;
+    line-height: 80%;
+    transition-duration: 0.75s;
+}
+
+.transform #menu-icon {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+#navigation {
+    position: fixed;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: height 1s, visibility 1s, opacity 0.5s linear;
+    transition-duration: 0.75s;
+
+    padding-top: 15vh;
+    height: 0;
+    width: 100%;
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 3em;
+    list-style: none;
+}
+
+#navigation li {
+    padding-left: 14vw;
+}
+
+.nav-hl-yellow {
+    background-image: linear-gradient(0deg,rgba(255,255,255,0) 100%);
+    transition: background-image 1s;
+}
+
+.nav-hl-yellow:hover {
+    background-image: linear-gradient(180deg,rgba(255,255,255,0) 50%, #fff346 50%);
+    /* background-color: #fff346; */
+    
+}
+
+.nav-hl-green:hover {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #a7eea4 50%);
+}
+
+.nav-hl-pink:hover {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #ffc2c2 50%);
+}
+
+.nav-hl-blue:hover {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #a2ccff 50%);
+}
+
+ul
+{
+    margin: 0;
+} 
+
+/* Home */
+
+#intro {
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 110%;
+}
+
+/* Contact */
+
+#contact {
+    flex-direction: column;
+}
+
+.contact-highlight {
+    text-decoration: underline;
+}
+
+/* Tutorials */
+
+.indent {
+    padding-left: 4vw;
+}
+
+.tutorial {
+    display: flex;
+    flex-direction: column;
+}
+
+.tag {
+    font-weight: bold;
+}
+
+/* Blog */
+
+.italic {
+    font-style: italic;
+}

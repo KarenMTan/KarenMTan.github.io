@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Karen Tan</title>
+        <link rel="stylesheet" href="class_id.css">
+        <link rel="stylesheet" href="html_elements.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body class="blue-bg">
+        <nav id="menu-bar">
+            <div id="menu-icon" onclick="transformMenu();">
+                +
+            </div>
+            <ul id="navigation" class="pink-bg">
+                <li onclick="transformMenu();">
+                    <a href="index.html"><span class="nav-hl-yellow">Home&nbsp&nbsp</span></a></li>
+                <li onclick="transformMenu();">
+                    <a href="about.html"><span class="nav-hl-green">About&nbsp&nbsp</span></a></li>
+                <li onclick="transformMenu();">
+                    <a href="education.html"><span class="nav-hl-yellow">Education</span></a></li>
+                <li onclick="transformMenu();">
+                    <a href="#"><span class="nav-hl-blue">Experience</span></a></li>
+                </li>
+                <li onclick="transformMenu();">
+                    <a href="tutorials.html"><span class="nav-hl-green">Tutorials&nbsp&nbsp</span></a></li>
+                <li onclick="transformMenu();">
+                    <a href="blog.html"><span class="nav-hl-yellow">Blog&nbsp&nbsp</span></a></li>
+                <li onclick="transformMenu();">
+                    <a href="index.html#contact"><span class="nav-hl-blue">Contact&nbsp&nbsp</span></a></li>
+            </ul>
+        </nav>
+
+        <article id="experience">
+            <h1><span class="half-highlight-pink">Experience&nbsp</span></h1>
+
+            <br><br>
+
+            <!--             
+            <ul>
+                <li>C++</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>HTMl</li>
+                <li>CSS</li>
+            </ul> -->
+
+            <h2>Bendix Commercial Vehicle Systems - Software Intern</h2>
+            <p>
+                The summer after my freshman year, I interned at Bendix Commercial Vehicle Systems in Irvine, California.
+            </p>
+            <p>
+                Over the course of 10 weeks, I adapted Python's Tkinter and PySerial libraries to design and develop an in-house tool to help engineers experiment with camera image sensors. This project gave me the opportunity to explore Python's object oriented programming.  
+            </p>
+            <p>
+                I also helped design and evaluate the SafetyDirect mobile app which will allow thousands of drivers to record trips in their commercial vehicles. During this project, I learned how to design and construct functional flow charts detailing the relationship between pages and user action. 
+            </p>
+        </article>
+
+    </body>
+    
+    <script>
+        function transformMenu()
+        {
+            var x = document.getElementById("navigation");
+            var y = document.getElementById("menu-bar")
+            y.classList.toggle("transform");
+
+            if (x.style.visibility === "visible") {
+                x.style.height = "0"
+                x.style.visibility = "hidden";
+                x.style.opacity = 0;
+            } else {
+                x.style.height = "100%"
+                x.style.visibility = "visible";
+                x.style.opacity = 1;
+            }
+        } 
+    </script>
+</html>

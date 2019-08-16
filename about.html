@@ -2,14 +2,10 @@
 <html>
     <head>
         <title>Karen Tan</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="menu.css">
-        <link rel="stylesheet" href="about.css">
-        <!-- <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> -->
+        <link rel="stylesheet" href="class_id.css">
+        <link rel="stylesheet" href="html_elements.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     </head>
     <body class="green-bg">
         <nav id="menu-bar">
@@ -21,18 +17,22 @@
                     <a href="index.html"><span class="nav-hl-yellow">Home&nbsp&nbsp</span></a></li>
                 <li onclick="transformMenu();">
                     <a href="#"><span class="nav-hl-green">About&nbsp&nbsp</span></a></li>
-                <li onclick="transformMenu();">Education</li>
-                <li onclick="transformMenu();">Experience</li>
-                <li onclick="transformMenu();">Tutorials</li>
                 <li onclick="transformMenu();">
-                    <a href="blog.html"><span class="nav-hl-blue">Blog&nbsp&nbsp</span></a></li>
+                    <a href="education.html"><span class="nav-hl-yellow">Education</span></a></li>
+                <li onclick="transformMenu();">
+                    <a href="experience.html"><span class="nav-hl-blue">Experience</span></a></li>
+                </li>
+                <li onclick="transformMenu();">
+                    <a href="tutorials.html"><span class="nav-hl-green">Tutorials&nbsp&nbsp</span></a></li>
+                <li onclick="transformMenu();">
+                    <a href="blog.html"><span class="nav-hl-yellow">Blog&nbsp&nbsp</span></a></li>
                 <li onclick="transformMenu();">
                     <a href="index.html#contact"><span class="nav-hl-blue">Contact&nbsp&nbsp</span></a></li>
             </ul>
         </nav>
 
-        <article class="about">
-            <h2><span class="half-highlight-pink">About&nbsp</span></h2>
+        <article>
+            <h1><span class="half-highlight-pink">About&nbsp</span></h1>
             <p>
                 I'm a second year Computer Science major at UCLA.
 
@@ -44,14 +44,6 @@
                 This summer, I'm interning at Bendix Commercial Vehicle Systems in Irvine, California. Over these past few weeks, I've adapted Python's Tkinter and PySerial libraries to design and develop an in-house tool to help engineers experiment with camera image sensors. I've also helped design and evaluate the SafetyDirect mobile app which will allow thousands of drivers to record trips in their commercial vehicles.
             </p>
         </article>
-
-        <!-- <article id="about">
-            <p>I'm from Diamond Bar, California. I'm a second year Computer Science major at the University of California, Los Angeles. I attended Diamond Bar High School and graduated in 2018. </p>
-
-            <img id="NewportBeach" src="Images/Aquarium.jpg" alt="A photo of me and my parents visiting the Aqarium of the Pacific.">
-                
-            <p>One of my largest influences and fondest memories is being part of FRC Team 3473, "Team Sprocket". From 2016 to 2017, I was one of 8 programmers on the Programming Subteam. There I learned Java and thus was the start of my journey into the world of Computer Science. From 2017 to 2018, I served as Engineering Captain of over 50 members. That season, Team Sprocket won the Orange County Regional and qualified for the World Championships in Houston, Texas.</p>
-        </article> -->
     
     </body>
     <script>

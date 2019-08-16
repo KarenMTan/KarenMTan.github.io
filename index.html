@@ -2,15 +2,14 @@
 <html>
     <head>
         <title>Karen Tan</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="menu.css">
-        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="class_id.css">
+        <link rel="stylesheet" href="html_elements.css">
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     </head>
-    <body id="body">
+    <body>
         <nav id="menu-bar">
             <div id="menu-icon" onclick="transformMenu();">
                 +
@@ -20,32 +19,35 @@
                     <a href="#"><span class="nav-hl-yellow">Home&nbsp&nbsp</span></a></li>
                 <li onclick="transformMenu();">
                     <a href="about.html"><span class="nav-hl-green">About&nbsp&nbsp</span></a></li>
-                <li onclick="transformMenu();">Education</li>
-                <li onclick="transformMenu();">Experience</li>
-                <li onclick="transformMenu();">Tutorials</li>
                 <li onclick="transformMenu();">
-                    <a href="blog.html"><span class="nav-hl-blue">Blog&nbsp&nbsp</span></a></li>
+                    <a href="education.html"><span class="nav-hl-yellow">Education</span></a></li>
+                <li onclick="transformMenu();">
+                    <a href="experience.html"><span class="nav-hl-blue">Experience</span></a></li>
+                </li>
+                <li onclick="transformMenu();">
+                    <a href="tutorials.html"><span class="nav-hl-green">Tutorials&nbsp&nbsp</span></a></li>
+                <li onclick="transformMenu();">
+                    <a href="blog.html"><span class="nav-hl-yellow">Blog&nbsp&nbsp</span></a></li>
                 <li onclick="transformMenu();">
                     <a href="index.html#contact"><span class="nav-hl-blue">Contact&nbsp&nbsp</span></a></li>
             </ul>
         </nav>
 
         <div id="main">
-            <section class="intro yellow-bg">
+            <section id="intro" class="yellow-bg">
                 <div>
                     <h1><span class="half-highlight-pink">Hello, my name is Karen Tan.&nbsp;</span></h1>
                 </div>
-                <!-- <img id="Garden" src="Images/Garden.jpg" alt="Me in Butchart Gardens in Victoria, Canada."> -->
             </section>
 
-            <section class="about green-bg">
+            <!-- <section class="about green-bg">
                 <h2>
                     About
                 </h2>
                 <p>
-                    I'm a second year Computer Science major at UCLA. 
+                    I'm a second year Computer Science major at UCLA.
                 </p>
-            </section>
+            </section> -->
 
             <section id="contact" class="blue-bg">
                 <p>Contact me at 
