@@ -1,89 +1,199 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Karen Tan</title>
-        <link rel="stylesheet" href="class_id.css">
-        <link rel="stylesheet" href="html_elements.css">
-        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <nav id="menu-bar">
-            <div id="menu-icon" onclick="transformMenu();">
-                +
-            </div>
-            <ul id="navigation" class="pink-bg">
-                <li onclick="transformMenu();">
-                    <a href="#"><span class="nav-hl-yellow">Home&nbsp&nbsp</span></a></li>
-                <li onclick="transformMenu();">
-                    <a href="about.html"><span class="nav-hl-green">About&nbsp&nbsp</span></a></li>
-                <li onclick="transformMenu();">
-                    <a href="education.html"><span class="nav-hl-yellow">Education</span></a></li>
-                <li onclick="transformMenu();">
-                    <a href="experience.html"><span class="nav-hl-blue">Experience</span></a></li>
-                </li>
-                <li onclick="transformMenu();">
-                    <a href="tutorials.html"><span class="nav-hl-green">Tutorials&nbsp&nbsp</span></a></li>
-                <li onclick="transformMenu();">
-                    <a href="blog.html"><span class="nav-hl-yellow">Blog&nbsp&nbsp</span></a></li>
-                <li onclick="transformMenu();">
-                    <a href="index.html#contact"><span class="nav-hl-blue">Contact&nbsp&nbsp</span></a></li>
-            </ul>
-        </nav>
 
-        <div id="main">
-            <section id="intro" class="yellow-bg">
-                <div>
-                    <h1><span class="half-highlight-pink">Hello, my name is Karen Tan.&nbsp;</span></h1>
-                </div>
-            </section>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karen Tan</title>
+    <link rel="stylesheet" href="class_id.css">
+    <link rel="stylesheet" href="html_elements.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
 
-            <!-- <section class="about green-bg">
-                <h2>
-                    About
-                </h2>
-                <p>
-                    I'm a second year Computer Science major at UCLA.
-                </p>
-            </section> -->
-
-            <section id="contact" class="blue-bg">
-                <p>Contact me at 
-                    <span class="contact-highlight">
-                        karenmtan@g.ucla.edu
-                    </span>
-                </p>
-                <p>Find more on my 
-                    <a href="https://www.linkedin.com/in/karen-m-tan/" target="_blank" class="contact-highlight">
-                        LinkedIn
-                    </a> 
-                    and 
-                    <a href="https://github.com/karenmtan" target="_blank" class="contact-highlight">
-                        GitHub
-                    </a>
-                </p>
-            </section>
+<body>
+    <nav id="menu-bar">
+        <div id="menu-icon" onclick="transformMenu();">
+            +
         </div>
-    </body>
-    
-    <script>
-        function transformMenu()
-        {
-            var x = document.getElementById("navigation");
-            var y = document.getElementById("menu-bar")
-            y.classList.toggle("transform");
+        <ul id="navigation" class="pink-bg">
+            <li onclick="transformMenu();">
+                <a href="#"><span class="nav-hl-yellow">Home&nbsp&nbsp</span></a></li>
+            <li onclick="transformMenu();">
+                <a href="about.html"><span class="nav-hl-green">About&nbsp&nbsp</span></a></li>
+            <!-- <li onclick="transformMenu();">
+                <a href="education.html"><span class="nav-hl-yellow">Education</span></a></li> -->
+            <li onclick="transformMenu();">
+                <a href="experience.html"><span class="nav-hl-blue">Experience&nbsp&nbsp</span></a></li>
+            </li>
+            <li onclick="transformMenu();">
+                <a href="tutorials.html"><span class="nav-hl-green">Tutorials&nbsp&nbsp</span></a></li>
+            <!-- <li onclick="transformMenu();">
+                <a href="blog.html"><span class="nav-hl-yellow">Blog&nbsp&nbsp</span></a></li> -->
+            <li onclick="transformMenu();">
+                <a href="index.html#contact"><span class="nav-hl-yellow">Contact&nbsp&nbsp</span></a></li>
+        </ul>
+    </nav>
 
-            if (x.style.visibility === "visible") {
-                x.style.height = "0"
-                x.style.visibility = "hidden";
-                x.style.opacity = 0;
-            } else {
-                x.style.height = "100%"
-                x.style.visibility = "visible";
-                x.style.opacity = 1;
+    <div id="main">
+        <section id="intro" class="yellow-bg">
+            <div>
+                <h1><span class="half-highlight-pink">Hello, my name is <br class="responsive"> Karen Tan.&nbsp;</span>
+                </h1>
+            </div>
+        </section>
+
+        <section class="green-bg">
+            <h2>
+                <span class="half-highlight-pink">About&nbsp;</span>
+            </h2>
+            <div id="about">
+                <img id="Garden" src="Website Materials/Garden.jpg" alt="Me in Butchart Gardens in Canada">
+                <div>
+                    <p>
+                        I currently attend UCLA where I'm pursuing a BS in Computer Science.
+                    </p>
+                    <p>
+                        To me, computer science is a beautiful tool used to facilitate. To expedite. To automate.
+                    </p>
+                    <p>
+                        This summer, I had the opportunity to design and develop some of my own such applications.
+                    </p>
+                    <br>
+
+                    <a class="center" href="about.html">
+                        <button>Read More</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="blue-bg">
+            <h2>
+                <span class="half-highlight-pink">Experience&nbsp;</span>
+            </h2>
+            <p>
+                This summer, I was a software co-op for Bendix Commercial Vehicle Systems' Research and Development Center in Irvine, California.
+            </p>
+
+            <p>
+                My primary assignment was to design and develop an in-house tool to help engineers quickly and
+                easily experiment with camera image sensors:
+            </p>
+
+            <div id="GUI-function-demo-container-horizontal">
+                <img id="import-export" class="GUI-function-demo-horizontal" src="Website Materials/import.gif">
+                <img id="binary" class="GUI-function-demo-horizontal" src="Website Materials/binary_display.gif">
+                <img id="terminal" class="GUI-function-demo-horizontal" src="Website Materials/terminal.gif">
+            </div>
+
+            <div class="triplet-caption">
+                <figcaption class="GUI-function-demo-caption-horizontal">Quickly import and export hundreds of addresses and
+                    values
+                    from CSV files</figcaption>
+                <figcaption class="GUI-function-demo-caption-horizontal">Effortlessly fine-tune individual bits</figcaption>
+                <figcaption class="GUI-function-demo-caption-horizontal">Easily enter additional commands through the terminal
+                </figcaption>
+            </div>
+
+            <div id="GUI-function-demo-container-vertical">
+                <figure>
+                    <img id="import-export" class="GUI-function-demo" src="Website Materials/import.gif">
+                    <figcaption class="GUI-function-demo-caption">Quickly import and export hundreds of addresses and values from CSV files</figcaption>
+                </figure>
+                <figure>
+                    <img id="binary" class="GUI-function-demo" src="Website Materials/binary_display.gif">
+                    <figcaption class="GUI-function-demo-caption">Effortlessly fine-tune individual bits
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img id="terminal" class="GUI-function-demo" src="Website Materials/terminal.gif">
+                    <figcaption class="GUI-function-demo-caption">Easily enter additional commands through the terminal</figcaption>
+                </figure>
+            </div>
+
+            <br>
+            <br>
+            
+            <a class="center" href="experience.html">
+                <button>Learn More</button>
+            </a>
+        </section>
+
+        <section class="green-bg">
+            <h2>
+                <span class="half-highlight-pink">Tutorials&nbsp;</span>
+            </h2>
+            <p>
+                During Spring Quarter, I collaborated with DevX to organize and teach the Build Your Own Website
+                Portfolio Workshop Series. I've published an updated version of the workshop on my website.
+            </p>
+            <a class="center" href="tutorials.html">
+                <button>Visit Tutorial</button>
+            </a>
+        </section>
+
+        <section id="contact" class="yellow-bg">
+            <p>Contact me at
+                <span class="contact-highlight">
+                    karenmtan@g.ucla.edu
+                </span>
+            </p>
+            <p>Find more on my
+                <a href="https://www.linkedin.com/in/karen-m-tan/" target="_blank" class="contact-highlight">
+                    LinkedIn
+                </a>
+                and
+                <a href="https://github.com/karenmtan" target="_blank" class="contact-highlight">
+                    GitHub
+                </a>
+            </p>
+        </section>
+    </div>
+</body>
+<script>
+
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    function transformMenu() {
+        var x = document.getElementById("navigation");
+        var y = document.getElementById("menu-bar")
+        y.classList.toggle("transform");
+
+        if (x.style.visibility === "visible") {
+            x.style.height = "0"
+            x.style.visibility = "hidden";
+            x.style.opacity = 0;
+        } else {
+            x.style.height = "100%"
+            x.style.visibility = "visible";
+            x.style.opacity = 1;
+        }
+    }
+
+    window.onload = function () {
+        triplet_transition()
+    }
+
+    let GUI_function_demo = document.querySelectorAll(".GUI-function-demo-horizontal");
+    let GUI_function_demo_caption = document.querySelectorAll(".GUI-function-demo-caption-horizontal");
+    let GUI_function_demo_horizontal_caption = document.getElementById("triplet-caption");
+    let justify_content = ['flex-start', 'center', 'flex-end'];
+
+    async function triplet_transition() {
+        while (window.innerWidth > 1610) {
+            for (let i = 0; i < GUI_function_demo.length; i++) {
+                GUI_function_demo[i].style.height = "400px";
+                GUI_function_demo_caption[i].style.display = "block";
+                // GUI_function_demo_horizontal_caption.style.justifyContent = "center";
+                await sleep(15000);
+                GUI_function_demo[i].style.height = "200px";
+                GUI_function_demo_caption[i].style.display = "none";
             }
-        } 
-    </script>
+        }
+    }
+
+</script>
+
 </html>

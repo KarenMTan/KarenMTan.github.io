@@ -34,6 +34,17 @@
     background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #89beff 50%);
 }
 
+.italic {
+    font-style: italic;
+    padding-right: 2px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+
 /* Navigation Bar */
 
 
@@ -71,7 +82,7 @@ nav {
     height: 0;
     width: 100%;
     font-family: 'Libre Caslon Text', serif;
-    font-size: 3em;
+    font-size: 3.5em;
     list-style: none;
 }
 
@@ -79,15 +90,8 @@ nav {
     padding-left: 14vw;
 }
 
-.nav-hl-yellow {
-    background-image: linear-gradient(0deg,rgba(255,255,255,0) 100%);
-    transition: background-image 1s;
-}
-
 .nav-hl-yellow:hover {
-    background-image: linear-gradient(180deg,rgba(255,255,255,0) 50%, #fff346 50%);
-    /* background-color: #fff346; */
-    
+    background-image: linear-gradient(180deg, rgba(255,255,255,0) 50%,  #fff346 50%);
 }
 
 .nav-hl-green:hover {
@@ -107,6 +111,10 @@ ul
     margin: 0;
 } 
 
+#intro, #contact {
+    height: 76vh;
+}
+
 /* Home */
 
 #intro {
@@ -114,6 +122,22 @@ ul
     justify-content: space-around;
     text-align: center;
     font-size: 110%;
+}
+
+#about {
+    display: flex;
+    flex-direction: row;
+}
+
+#Garden {
+    margin-right: 5%;
+    height: 600px;
+    width: 600px;
+    object-fit: cover;
+}
+
+.triplet-caption {
+    display: flex;
 }
 
 /* Contact */
@@ -126,10 +150,69 @@ ul
     text-decoration: underline;
 }
 
+/* Experience */
+
+#experience-body {
+    display: flex;
+    flex-direction: row;
+}
+
+#GUI-function-demo-container-horizontal {
+    display: flex;
+    height: 475px;
+    justify-content: space-around;
+}
+
+#GUI-function-demo-container-horizontal img {
+    align-self: flex-start;
+    height: 200px;
+    width: auto;
+    transition-duration: 1s;
+}
+
+#GUI-function-demo-container-vertical {
+    display: none;
+    flex-direction: column;
+}
+
+#GUI-function-demo-container-vertical figure {
+    align-self: center;
+    /* height: 200px;
+    width: auto; */
+}
+
+#GUI-function-demo-container-vertical figure figcaption {
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+.GUI-function-demo-caption-horizontal {
+    display: none;
+}
+
+.experience-content {
+    display: flex;
+    justify-content: row;
+}
+
+#timeline {
+    margin: 0 4%;
+}
+
+#timeline p{
+    text-align: center;
+}
+
+.timeline-line {
+    margin: auto;
+    width: 2px;
+    background-color: #323335;
+}
+
 /* Tutorials */
 
 .indent {
-    padding-left: 4vw;
+    padding-left: 3vw;
 }
 
 .tutorial {
@@ -137,12 +220,62 @@ ul
     flex-direction: column;
 }
 
-.tag {
+.tutorial img{
+    height: auto;
+    width: auto;
+}
+
+.bold {
     font-weight: bold;
 }
 
-/* Blog */
+.tutorial figure {
+    margin: 2vh auto;
+}
 
-.italic {
-    font-style: italic;
+figure {
+    display:table;
+}
+
+figcaption {
+    display:table-caption;
+    caption-side:bottom;
+}
+
+.note, .sub-note {
+    margin: 20px auto;
+}
+
+.note {
+    width: 90%;
+}
+
+.sub-note {
+    width: 80%;
+}
+
+/* Responsive web page */
+
+.responsive {
+    display: none;
+}
+
+@media only screen and (max-width: 1246px) {
+    .responsive {
+        display: block;
+    }
+
+    #about {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1610px) {
+    #GUI-function-demo-container-horizontal {
+        display: none;
+    }
+
+    #GUI-function-demo-container-vertical {
+        display: flex;
+    }
 }

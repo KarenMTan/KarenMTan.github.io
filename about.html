@@ -1,67 +1,86 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Karen Tan</title>
-        <link rel="stylesheet" href="class_id.css">
-        <link rel="stylesheet" href="html_elements.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
-    </head>
-    <body class="green-bg">
-        <nav id="menu-bar">
-            <div id="menu-icon" onclick="transformMenu();">
-                +
-            </div>
-            <ul id="navigation" class="pink-bg">
-                <li onclick="transformMenu();">
-                    <a href="index.html"><span class="nav-hl-yellow">Home&nbsp&nbsp</span></a></li>
-                <li onclick="transformMenu();">
-                    <a href="#"><span class="nav-hl-green">About&nbsp&nbsp</span></a></li>
-                <li onclick="transformMenu();">
-                    <a href="education.html"><span class="nav-hl-yellow">Education</span></a></li>
-                <li onclick="transformMenu();">
-                    <a href="experience.html"><span class="nav-hl-blue">Experience</span></a></li>
-                </li>
-                <li onclick="transformMenu();">
-                    <a href="tutorials.html"><span class="nav-hl-green">Tutorials&nbsp&nbsp</span></a></li>
-                <li onclick="transformMenu();">
-                    <a href="blog.html"><span class="nav-hl-yellow">Blog&nbsp&nbsp</span></a></li>
-                <li onclick="transformMenu();">
-                    <a href="index.html#contact"><span class="nav-hl-blue">Contact&nbsp&nbsp</span></a></li>
-            </ul>
-        </nav>
 
-        <article>
-            <h1><span class="half-highlight-pink">About&nbsp</span></h1>
-            <p>
-                I'm a second year Computer Science major at UCLA.
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karen Tan</title>
+    <link rel="stylesheet" href="class_id.css">
+    <link rel="stylesheet" href="html_elements.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+</head>
 
-                <!-- I love computer science because  -->
+<body class="green-bg">
+    <nav id="menu-bar">
+        <div id="menu-icon" onclick="transformMenu();">
+            +
+        </div>
+        <ul id="navigation" class="pink-bg">
+            <li onclick="transformMenu();">
+                <a href="index.html"><span class="nav-hl-yellow">Home&nbsp&nbsp</span></a></li>
+            <li onclick="transformMenu();">
+                <a href="#"><span class="nav-hl-green">About&nbsp&nbsp</span></a></li>
+            <!-- <li onclick="transformMenu();">
+                <a href="education.html"><span class="nav-hl-yellow">Education</span></a></li> -->
+            <li onclick="transformMenu();">
+                <a href="experience.html"><span class="nav-hl-blue">Experience&nbsp&nbsp</span></a></li>
+            </li>
+            <li onclick="transformMenu();">
+                <a href="tutorials.html"><span class="nav-hl-green">Tutorials&nbsp&nbsp</span></a></li>
+            <!-- <li onclick="transformMenu();">
+                <a href="blog.html"><span class="nav-hl-yellow">Blog&nbsp&nbsp</span></a></li> -->
+            <li onclick="transformMenu();">
+                <a href="index.html#contact"><span class="nav-hl-yellow">Contact&nbsp&nbsp</span></a></li>
+        </ul>
+    </nav>
 
-                Last year, I was a member of SWE@UCLA's Technical Committee where I directed and instructed workshops like the seven-week Build Your Own Website Portfolio Workshop Series. My goal was provide guidance and mentorship to encourage students of all majors to explore web development. 
-            </p>
-            <p>
-                This summer, I'm interning at Bendix Commercial Vehicle Systems in Irvine, California. Over these past few weeks, I've adapted Python's Tkinter and PySerial libraries to design and develop an in-house tool to help engineers experiment with camera image sensors. I've also helped design and evaluate the SafetyDirect mobile app which will allow thousands of drivers to record trips in their commercial vehicles.
-            </p>
-        </article>
-    
-    </body>
-    <script>
-        function transformMenu()
-        {
-            var x = document.getElementById("navigation");
-            var y = document.getElementById("menu-bar")
-            y.classList.toggle("transform");
-    
-            if (x.style.visibility === "visible") {
-                x.style.height = "0"
-                x.style.visibility = "hidden";
-                x.style.opacity = 0;
-            } else {
-                x.style.height = "100%"
-                x.style.visibility = "visible";
-                x.style.opacity = 1;
-            }
-        } 
-        </script>
+    <article>
+        <h1><span class="half-highlight-pink">About&nbsp</span></h1>
+        <p>
+            <!-- I'm currently a student at the University of California, Los Angeles where I'm pursuing a BS in computer science. I plan to graduate in 2022. -->
+
+            I'm currently a student at UCLA. I'm pursuing a BS in Computer Science and plan to graduate in 2022.
+        </p>
+        <p>
+            To me, computer science is a beautiful tool used to facilitate. To expedite. To automate.
+        </p>
+        <p>
+            I've grown up in an age where a phone app warns me of traffic conditions on the way home. An age where I can talk to a friend continents away in under a second. An age where thousands of emails can be sorted with a click of a button.
+        </p>
+        <p>
+            This summer, I had the opportunity to design and develop some of my own such applications. As a co-op at <a href="experience.html#bendix">Bendix Commercial Vehicle Systems' Research and Development Center in Irvine, California</a>, I applied Python's Tkinter and pySerial libraries to create an in-house tool that helps engineers experiment with hundreds of <a href="https://en.wikipedia.org/wiki/Processor_register">camera registers</a> simultaneously.
+
+        </p>
+        <p>
+            During the development process, I found significant support online. Regardless of the many "how to...with tkinter" entered or countless error messages pasted into search bars - someone had already asked. And remarkably - someone else had answered it. It reinforced my admiration and appreciation for the open community. It's one of the reasons I love this field: there are millions of people eager to learn and a million others excited to teach.
+
+            <!-- I also helped design and evaluate the SafetyDirect mobile app which will allow thousands of drivers to record trips in their commercial vehicles. The mobile app also gives hundreds of fleet-managers and individual drivers access to video recordings and event data.  -->
+        </p>
+        <p>
+            In fact, this community inspired me to join SWE@UCLA's Technical Committee where I organized and directed the 7-week <a href="tutorials.html">Build Your Own Website Portfolio Workshop Series</a> to teach and encourage web development to students of all majors.
+        </p>
+        <p>
+            I'm always excited to work on new projects! Reach out to me at karenmtan@g.ucla.edu
+        </p>
+    </article>
+
+</body>
+<script>
+    function transformMenu() {
+        var x = document.getElementById("navigation");
+        var y = document.getElementById("menu-bar")
+        y.classList.toggle("transform");
+
+        if (x.style.visibility === "visible") {
+            x.style.height = "0"
+            x.style.visibility = "hidden";
+            x.style.opacity = 0;
+        } else {
+            x.style.height = "100%"
+            x.style.visibility = "visible";
+            x.style.opacity = 1;
+        }
+    } 
+</script>
+
 </html>

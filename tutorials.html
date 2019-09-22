@@ -1,110 +1,486 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Karen Tan</title>
-        <link rel="stylesheet" href="class_id.css">
-        <link rel="stylesheet" href="html_elements.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
-    </head>
-    <body class="green-bg">
-        <nav id="menu-bar">
-            <div id="menu-icon" onclick="transformMenu();">
-                +
-            </div>
-            <ul id="navigation" class="pink-bg">
-                <li onclick="transformMenu();">
-                    <a href="index.html"><span class="nav-hl-yellow">Home&nbsp&nbsp</span></a></li>
-                <li onclick="transformMenu();">
-                    <a href="about.html"><span class="nav-hl-green">About&nbsp&nbsp</span></a></li>
-                <li onclick="transformMenu();">
-                    <a href="education.html"><span class="nav-hl-yellow">Education</span></a></li>
-                <li onclick="transformMenu();">
-                    <a href="experience.html"><span class="nav-hl-blue">Experience</span></a></li>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karen Tan</title>
+    <link rel="stylesheet" href="class_id.css">
+    <link rel="stylesheet" href="html_elements.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+</head>
+
+<body class="green-bg">
+    <nav id="menu-bar">
+        <div id="menu-icon" onclick="transformMenu();">
+            +
+        </div>
+        <ul id="navigation" class="pink-bg">
+            <li onclick="transformMenu();">
+                <a href="index.html"><span class="nav-hl-yellow">Home&nbsp&nbsp</span></a></li>
+            <li onclick="transformMenu();">
+                <a href="about.html"><span class="nav-hl-green">About&nbsp&nbsp</span></a></li>
+            <!-- <li onclick="transformMenu();">
+                <a href="education.html"><span class="nav-hl-yellow">Education</span></a></li> -->
+            <li onclick="transformMenu();">
+                <a href="experience.html"><span class="nav-hl-blue">Experience&nbsp&nbsp</span></a></li>
+            </li>
+            <li onclick="transformMenu();">
+                <a href="#"><span class="nav-hl-green">Tutorials&nbsp&nbsp</span></a></li>
+            <!-- <li onclick="transformMenu();">
+                <a href="blog.html"><span class="nav-hl-yellow">Blog&nbsp&nbsp</span></a></li> -->
+            <li onclick="transformMenu();">
+                <a href="index.html#contact"><span class="nav-hl-yellow">Contact&nbsp&nbsp</span></a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <h1><span class="half-highlight-pink">Tutorials&nbsp</span></h1>
+
+        <br> <br>
+
+        <h2>Updated: Create Your Own Website Portfolio Workshop Series</h2>
+        <p class="indent">
+            This is a updated version of the <a
+                href="https://drive.google.com/open?id=1TWq_sWkg6rnwuzHewoxD_SJ_W9Av7Y6V" target="_blank">original
+                workshop series</a> DevX and SWE held during Spring Quarter 2019. Original code can be found on my <a
+                href="https://github.com/KarenMTan" target="_blank">Github</a>.
+        </p>
+
+        <h3>1. Introduction to HTML and CSS</h3>
+        <p>
+            In order to write code, you will need to use a text editor. Text editors like Notepad on Windows or TextEdit
+            on Mac will work. But using <span class="italic">integrated development environments</span> (IDEs) like <a
+                href="https://code.visualstudio.com/download" target="_blank">Visual Studio Code</a> will not only allow you to write
+            code, but also detect syntax errors, debug code, and autofill properties.
+        </p>
+
+        <p>
+            HTML stands for “Hypertext Markup Language.” It’s often used in conjunction with CSS and Javascript to
+            create web pages and web applications.
+        </p>
+
+        <p>
+            CSS stands for “Cascading Style Sheet.” While HTML outlines the skeleton of your webpage, CSS focuses on the
+            display and style (as per the name). You can use CSS to simultaneously control the layout of multiple pages.
+        </p>
+
+        <p>
+            This first project will demonstrate basic HTML and CSS features.
+            <ol class="tutorial">
+                <li>Open your IDE or text editor</li>
+                <li>Go to "File" and select "New file"</li>
+                <li>Save as “index.html”</li>
+                <figure>
+                    <img src="Website Materials/!Doctype.PNG" alt="Demonstration of basic HTML tags">
+                    <figcaption>Figure 1.1: If you downloaded VSCode, after saving the file as an HTML file, type "!"
+                        then hit "tab". This will automatically generate the basic structure of an HTML document ;)
+
+                        <!-- Visit <a class="info" href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Introduction_to_HTML5">MDN</a> for more information about &lt;!DOCTYPE html&gt; and &lt;meta charset&gt;. -->
+                    </figcaption>
+                </figure>
+                <li>Insert the <span class="bold">&lt;!DOCTYPE html&gt;</span> declaration
+                    <ul>
+                        <li>The declaration specifies which version of HTML (HTML5) your document is in to your web
+                            browser. It is always the first line of your HTML code.</li>
+                    </ul>
                 </li>
-                <li onclick="transformMenu();">
-                    <a href="#"><span class="nav-hl-green">Tutorials&nbsp&nbsp</span></a></li>
-                <li onclick="transformMenu();">
-                    <a href="blog.html"><span class="nav-hl-yellow">Blog&nbsp&nbsp</span></a></li>
-                <li onclick="transformMenu();">
-                    <a href="index.html#contact"><span class="nav-hl-blue">Contact&nbsp&nbsp</span></a></li>
-            </ul>
-        </nav>
+                <li>
+                    Type the <span class="bold">&lt;html&gt;&lt;/html&gt;</span> tags. All your HTML code should go
+                    between these tags.
+                    <ul>
+                        <li>The “&lt;&gt;” and “&lt;/&gt;” represent opening and closing tags respectively. Not all HTML
+                            elements have a closing tag, but most do.</li>
+                        <li>
+                            If you downloaded VSCode, type the element followed by "Tab", this will add “&lt;&gt;”
+                            around the element followed by the corresponding closing tag.
+                        </li>
+                    </ul>
+                </li>
+                <li>Type the <span class="bold">&lt;head&gt;&lt;/head&gt;</span> tags within the <span
+                        class="bold">&lt;html&gt;&lt;/html&gt;</span> tags
+                    <ul>
+                        <li>Information placed within the <span class="bold">&lt;head&gt;&lt;/head&gt;</span> tags is
+                            primarily metadata that will not be displayed to the user. For example, the font type or the
+                            external CSS style sheets are referenced in the <span
+                                class="bold">&lt;head&gt;&lt;/head&gt;</span> tags.</li>
+                    </ul>
+                </li>
+                <li>
+                    Type the <span class="bold">&lt;body&gt;&lt;/body&gt;</span> tags within the <span
+                        class="bold">&lt;html&gt;&lt;/html&gt;</span> tags
+                    <ul>
+                        <li>
+                            The webpage's main content goes between the <span
+                                class="bold">&lt;body&gt;&lt;/body&gt;</span> tags.
+                        </li>
+                    </ul>
+                </li>
 
-        <article>
-            <h1><span class="half-highlight-pink">Tutorials&nbsp</span></h1>
-            
-            <br> <br>
+                <p class="note">
+                    You can view your website by navigating to the folder you saved "index.html" in, then
+                    right-click and select "Open with" and choose your preferred browser. It's going to look empty right
+                    now, so let's add some content to your portfolio!
+                </p>
 
-            <h2>Updated: Create Your Own Website Portfolio Workshop Series</h2>
-            <p class="indent">
-                This is a updated version of the <a href="https://drive.google.com/open?id=1TWq_sWkg6rnwuzHewoxD_SJ_W9Av7Y6V" target="_blank">original workshop series</a> DevX and I held during Spring Quarter 2019. Original code can be found on my <a href="https://github.com/KarenMTan">Github</a>.
-            </p>
+                <li>
+                    Type <span class="bold">&lt;h1&gt;Welcome!&lt;/h1&gt;</span> within the <span
+                        class="bold">&lt;body&gt;&lt;/body&gt;</span> tags
+                    <ul>
+                        <li>
+                            Headings are defined with &lt;h1&gt; through &lt;h6&gt; (similar to the styling you'd use in
+                            Microsoft Word).
+                        </li>
+                    </ul>
+                </li>
 
-            <h3>1. Introduction to HTML and CSS</h3>
-            <p>
-                In order to write code, you will need to use a text editor. Text editors like Notepad on Windows or TextEdit on Mac will work. <span class="italic">But</span> using text editors Visual Studio Code or Sublime Text will not only allow you to edit your code, but also detect syntax errors, provide suggestions, and autofill properties. 
-            </p>
+                <p class="note">
+                    I encourage you to refresh your browser and see the changes to your website after every step!
+                </p>
 
-            <p>
-                HTML stands for “Hypertext Markup Language.” It’s used in conjunction with CSS and Javascript to create web pages and web applications.
-            </p>
+                <li>
+                    Type <span class="bold">&lt;p&gt;My name is <span class="italic">Your Name</span>. I am excited to
+                        code my own website portfolio!&lt;/p&gt;</span> beneath your heading
+                    <ul>
+                        <li>
+                            These &lt;p&gt; tags represent paragraphs.
+                        </li>
+                    </ul>
+                </li>
 
-            <p>
-                CSS stands for “Cascading Style Sheet.” While HTML outlines the skeleton of your webpage, CSS focuses on the display and style. You can use CSS to simultaneously control the layout of multiple pages. 
-            </p>
+                <li>
+                    Between the two sentences, type <span class="bold">&lt;br&gt;</span> (Within the &lt;p&gt; tag)
+                    <ul>
+                        <li>
+                            This &lt;br&gt; tag represents a line break. They can also be used between tags (in addition
+                            to within tags).
+                        </li>
+                        <li>
+                            It is known as an <span class="italic">empty tag</span> because it has no closing tag.
+                        </li>
+                    </ul>
+                </li>
 
-            <p>
-                This first project will demonstrate basic HTML and CSS features. 
-                <ol class="tutorial">
-                    <li>Open text editor</li>
-                    <li>Create a new file</li>
-                    <li>Save as “index.html”</li>
-                    <img src="C:/Users/ktann/Desktop/Create Your Own Website Portfolio/Screenshot (12).png" alt="Demonstration of basic HTML tags">
-                    <li>Insert the <span class="tag">&lt;!DOCTYPE html&gt;</span> declaration
-                        <ul>
-                            <li>The declaration tells your web browser that it should render an HTML document. It is always the first line of your HTML code.</li>  
-                        </ul>
-                    </li>
+                <li>
+                    Type <span class="bold">&lt;p&gt;Find more on my &lt;a
+                        href="link/to_your/linkedIn"&gt;LinkedIn&lt;/a&gt;&lt;/p&gt;</span>
+                    <ul>
+                        <li>
+                            These &lt;a&gt; tags represent hyperlinks.
+                        </li>
+                        <li>
+                            The "href" within the opening tag is stands for <span class="italic">hypertext
+                                reference</span>. It is an <span class="italic">attribute</span> that specifies the
+                            hyperlink destination. Attributes specify additional information about an element and often
+                            come in key-value pairs.
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    Before the LinkedIn line, type <span class="bold">&lt;hr&gt;</span>
+                    <ul>
+                        <li>
+                            This &lt;br&gt; tag represents a thematic break. It will add a line between your name and
+                            the link to your LinkedIn.
+                        </li>
+                        <li>
+                            This tag should be used to indicate a shift in topic.
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    Before the thematic break, type <span class="bold">&lt;img src="file/destination-to-a/photo"
+                        alt="<span class="italic">Description of photo</span>" id="<span
+                            class="italic">unique-name-here</span>"&gt;</span>
+                    <ul>
+                        <li>
+                            This &lt;img&gt; tag represents an image.
+                        </li>
+                        <li>
+                            The <span class="bold">src</span> attribute marks the location of the image on your computer
+                            or on the internet. To
+                            get the link of an image on the internet, right-click and copy image address.
+                        </li>
+                        <li>
+                            The <span class="bold">alt</span> attribute denotes alternative text when the image cannot
+                            be rendered. It also
+                            specifies what text should be read to users who use <a
+                                href="https://webaccess.berkeley.edu/ask-pecan/what-is-a-screen-reader" target="_blank">screen
+                                readers</a>. To see the alternate text you entered, change the src to an invalid
+                            location.
+                        </li>
+                        <li>
+                            The <span class="bold">id</span> attribute defines a unique ID to this element. No other
+                            element in your HTML file should have a matching id. It is not exclusive to images; any HTML
+                            element can have an id. We will use the id to style your image.
+                        </li>
+                        <li>
+                            On a similar note, your elements can be referenced with the <span class="bold">class</span>
+                            attribute. This attribute is similar to id, but multiple elements in the file can be part of
+                            the same class. This will allow you to style multiple elements simultaneously.
+                        </li>
+                    </ul>
+                </li>
+
+                <p class="note">
+                    Notice the difference between the styling of the heading and paragraph. Although the text between
+                    the &lt;h#&gt; tags is larger and "bold" compared to the text between the &lt;p&gt; tags, you should
+                    not use the &lt;h#&gt; tags to make text larger and bold.
+                </p>
+
+                <p class="note">
+                    Housing a <span class="italic">heading</span> within a <span class="italic">heading</span> tag and a
+                    <span class="italic">paragraph</span> within a paragraph tag practices <a
+                        href="https://developer.mozilla.org/en-US/docs/Glossary/#Semantics_in_HTML" target="_blank">semantic HTML</a>.
+                    Praticing semantic markup is important for several reasons:
+                </p>
+
+                <p class="sub-note">
+                    Search engines use headings to catalouge the content of your website. Using headings to enlarge and
+                    emphasis text arbitrarily may prevent search engines from depicting your website accurately.
+                </p>
+
+                <p class="sub-note">
+                    Visually impaired users use <a
+                        href="https://webaccess.berkeley.edu/ask-pecan/what-is-a-screen-reader" target="_blank">screen readers</a> to
+                    read the webpage to them. When a developer follows the best practices for web acessibility, more
+                    users can navigate your site as you intended.
+                </p>
+
+                <p class="note">
+                    As you can see, HTML focuses on the content of your webpage. To change the styling, we use CSS.
+                    Let's learn a little about it before diving in!
+                </p>
+
+                <p class="note">
+                    There are several different ways to integrate CSS with your HTML: inline, internal, and external.
+                </p>
+
+                <p class="sub-note">
+                    Inline CSS uses the style attribute in HTML elements:
+                </p>
+
+                <figure>
+                    <img src="Website Materials/inline.PNG" alt="Inline styling of a paragraph element">
+                    <figcaption>
+                        Notice how within the double-quotes, the key-value pair is separated by a colon rather than an equals sign. 
+                    </figcaption>
+                </figure>
+                
+                <p class="sub-note">
+                    Inline CSS holds the highest precendence. If the same element was referenced in internal or external
+                    CSS, the inline CSS would dictate the final styling. But the disadvantage to using inline CSS is
+                    that you would need to individually style every element.
+                </p>
+
+                <p class="sub-note">
+                    Internal CSS is placed within the head tags of your HTML file and is enclosed within the style
+                    element:
+                </p>
+
+                <figure>
+                    <img src="Website Materials/internal.PNG" alt="Internal styling of a paragraph element">
+                    <figcaption>
+                        The "p" that comes before the open curly brace is a <span class="italic">selector</span>.
+                        Selectors can be HTML elements, classes, and IDs. <a
+                            href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">w3schools.com</a> has a great
+                        reference on selectors.
+                    </figcaption>
+                </figure>
+
+                <p class="sub-note">
+
+                </p>
+
+                <p class="sub-note">
+                    This allows you to style elements simultaneously. In the above example, all paragraphs on the page
+                    will have red text.
+                </p>
+
+                <p class="sub-note">
+                    External CSS is identical to internal CSS, except the code is located in its own file.
+                </p>
+
+                <img src="Website Materials/external.PNG" alt="External styling of a paragraph element">
+
+                <p class="sub-note">
+                    To link the external CSS you
+                    would place a link within the HTML page's head tags:
+                </p>
+
+                <img src="Website Materials/link.PNG" alt="Linking an external styling sheet to your HTML file">
+
+                <p class="note">
+                    In the examples above, I referred to the paragraph selector, p. Once again, selectors can be HTML
+                    elements, classes, and IDs. You can reference this handy table:
+                </p>
+
+                <table >
+                    <tr>
+                        <th>
+                            Selector type
+                        </th>
+                        <th>
+                            CSS Syntax
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            HTML element
+                        </td>
+                        <td>
+                            <span class="italic">HTML element</span>{
+                            <br>
+                            <br>
+                            }
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            class
+                        </td>
+                        <td>
+                            .<span class="italic">class</span> {
+                            <br>
+                            <br>
+                            }
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            id
+                        </td>
+                        <td>
+                            #<span class="italic">id</span> {
+                            <br>
+                            <br>
+                            }
+                        </td>
+                    </tr>
+                </table>
+
+                <p class="note">
+                    Now that you know some basics, let's learn CSS!
+                </p>
+
+                <li>Go to "File" and select "New file"</li>
+                <li>Save as “style.css”</li>
+                <li>
+                    Within the head tags, type <span class="bold">&lt;link rel="stylesheet" src="style.css"&gt;
+                </li>
+
+                <li>
+                    Let's first change the font of the webpage:
+                    <ul>
+                        <li>
+                            Go to <a href="https://fonts.google.com/" target="_blank">Google Fonts</a> and select a font for your
+                            website.
+                        </li>
+                        <li>
+                            Alternatively, CSS comes with web safe font combinations. You can find the list on <a
+                                href="https://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank">w3schools.com</a>.
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    Now that you've selected a font, go to style.css and type:
+                </li>
+                <img src="Website Materials/font-family.PNG"
+                    alt="In the external style sheet, specify the font-family within the p selector's curly braces.">
+                <ul>
                     <li>
-                        Type the <span class="tag">&lt;html&gt;&lt;/html&gt;</span> tags
-                        <ul>
-                            <li>The “&lt;&gt;” and “&lt;/&gt;” represent opening and closing tags respectively. Not all HTML elements have a closing tag, but most do. If you’ve downloaded a development text editor, it may even auto-complete the closing tag for you!</li>
-                        </ul>
+                        If you chose a font from Google Fonts, copy the code in the "Specify in CSS" section.
+                        Additionally, in the head tag of your HTML file, just as you linked the external CSS, link the
+                        font by copying the code in the "Embed Font" section.
                     </li>
-                    <li>Type the <span class="tag">&lt;head&gt;&lt;/head&gt;</span> tags within the <span class="tag">&lt;html&gt;&lt;/html&gt;</span> tags
-                        <ul>
-                            <li>Information placed within the <span class="tag">&lt;head&gt;&lt;/head&gt;</span> tags is primarily metadata that will not be displayed to the user. For example, the font type or the external CSS style sheets are referenced within the <span class="tag">&lt;head&gt;&lt;/head&gt;</span> tags.</li>
-                        </ul>
-                    </li>
+                </ul>
+                <img src="Website Materials/Google-Fonts.PNG" alt="Font selection on fonts.google.com">
+                <ul>
                     <li>
-                        Type the <span class="tag">&lt;body&gt;&lt;/body&gt;</span> tags within the <span class="tag">&lt;html&gt;&lt;/html&gt;</span> tags
-                        <ul>
-                            <li>
-                                Following most heads is a body - HTML is no exception. The <span class="tag">&lt;body&gt;&lt;/body&gt;</span> tags store the web page’s main content.
-                            </li>
-                        </ul>
+                        If you chose a font from the list of web safe fonts, copy the font-family and paste it in your
+                        style.css file.
                     </li>
+                </ul>
+                <img src="Website Materials/web-safe.PNG" alt="Font selection on w3schools.com">
+
+                <ul>
+                    <li>
+                        Notice that only paragraph text changed. Repeat steps 17 and 18 to change your heading font.
+                    </li>
+                </ul>
+
+                <li>
+                    To adjust the size of your text, use the <span class="bold">font-size</span> property.
+                    <ul>
+                        <li>
+                            Refer to CSS units on <a
+                                href="https://www.w3schools.com/cssref/css_units.asp"  target="_blank">w3schools.com</a>.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    To adjust the size of your image, type a "#" followed by the id of your image followed by "{ }".
+                    Within the braces use the <span class="bold">height</span> and <span class="bold">weight</span>
+                    properties.
+                    <ul>
+                        <li>
+                            To maintain the image's original ratio, explicitly specify <span class="bold">height</span>
+                            and set <span class="bold">width: auto</span> (and vice versa).
+                        </li>
+                        <li>
+                            You don't need to refer to the image with an id. Instead you can use the element name "img"
+                            as a selector as well. However, this may get tricky if your webpage has multiple images that
+                            you want to size differently.
+                        </li>
+                        <li>
+                            You can find more image styling techniques on <a
+                                href="https://www.w3schools.com/css/css3_images.asp" target="_blank">w3schools.com</a>.
+                        </li>
+                    </ul>
+                </li>
+
+                <p class="note">
+                    Now that you have the beginnings of your website coded, let's publish it to the World Wide Web!
+                </p>
+
+                <li>
+                    There are multiple ways to publish your site for free! 
+                    <ul>
+                        <li>
+                            <a href="https://surge.sh/help/getting-started-with-surge" target="_blank">Surge</a>
+                        </li>
+                        <li>
+                            <a href="https://gist.github.com/TylerFisher/6127328" target="_blank">Github Pages</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <p>
+                    I hope you learned how to get yourself started in the web dev world with this tutorial. I learned how to code this website from online resources like <a href="https://developer.mozilla.org/en-US/docs/Web" target="_blank">MDN</a>, <a href="https://www.w3schools.com/" target="_blank">w3schools.com</a>, and <a href="https://stackoverflow.com/"  target="_blank">Stack Overflow</a> just to name a few. Dream big and be persistent. Happy coding!
+                </p>
             </ol>
-            </p>
-        </article>
-    </body>
-    <script>
-        function transformMenu()
-        {
-            var x = document.getElementById("navigation");
-            var y = document.getElementById("menu-bar")
-            y.classList.toggle("transform");
-    
-            if (x.style.visibility === "visible") {
-                x.style.height = "0"
-                x.style.visibility = "hidden";
-                x.style.opacity = 0;
-            } else {
-                x.style.height = "100%"
-                x.style.visibility = "visible";
-                x.style.opacity = 1;
-            }
-        } 
-        </script>
+        </p>
+    </article>
+</body>
+<script>
+    function transformMenu() {
+        var x = document.getElementById("navigation");
+        var y = document.getElementById("menu-bar")
+        y.classList.toggle("transform");
+
+        if (x.style.visibility === "visible") {
+            x.style.height = "0"
+            x.style.visibility = "hidden";
+            x.style.opacity = 0;
+        } else {
+            x.style.height = "100%"
+            x.style.visibility = "visible";
+            x.style.opacity = 1;
+        }
+    } 
+</script>
+
 </html>

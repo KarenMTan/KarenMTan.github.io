@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Karen Tan</title>
-        <link rel="stylesheet" href="class_id.css">
-        <link rel="stylesheet" href="html_elements.css">
-        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    </head>
-    <body class="blue-bg">
-        <nav id="menu-bar">
-            <div id="menu-icon" onclick="transformMenu();">
-                +
-            </div>
-            <ul id="navigation" class="pink-bg">
-                <li onclick="transformMenu();">
-                    <a href="index.html"><span class="nav-hl-yellow">Home&nbsp&nbsp</span></a></li>
-                <li onclick="transformMenu();">
-                    <a href="about.html"><span class="nav-hl-green">About&nbsp&nbsp</span></a></li>
-                <li onclick="transformMenu();">
-                    <a href="education.html"><span class="nav-hl-yellow">Education</span></a></li>
-                <li onclick="transformMenu();">
-                    <a href="#"><span class="nav-hl-blue">Experience</span></a></li>
-                </li>
-                <li onclick="transformMenu();">
-                    <a href="tutorials.html"><span class="nav-hl-green">Tutorials&nbsp&nbsp</span></a></li>
-                <li onclick="transformMenu();">
-                    <a href="blog.html"><span class="nav-hl-yellow">Blog&nbsp&nbsp</span></a></li>
-                <li onclick="transformMenu();">
-                    <a href="index.html#contact"><span class="nav-hl-blue">Contact&nbsp&nbsp</span></a></li>
-            </ul>
-        </nav>
 
-        <article id="experience">
-            <h1><span class="half-highlight-pink">Experience&nbsp</span></h1>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karen Tan</title>
+    <link rel="stylesheet" href="class_id.css">
+    <link rel="stylesheet" href="html_elements.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
 
-            <br><br>
+<body class="blue-bg" onresize="timeline_effect()">
+    <!-- <onresize="timeline_effect()"> -->
+    <nav id="menu-bar">
+        <div id="menu-icon" onclick="transformMenu();">
+            +
+        </div>
+        <ul id="navigation" class="pink-bg">
+            <li onclick="transformMenu();">
+                <a href="index.html"><span class="nav-hl-yellow">Home&nbsp&nbsp</span></a></li>
+            <li onclick="transformMenu();">
+                <a href="about.html"><span class="nav-hl-green">About&nbsp&nbsp</span></a></li>
+            <!-- <li onclick="transformMenu();">
+                <a href="education.html"><span class="nav-hl-yellow">Education</span></a></li> -->
+            <li onclick="transformMenu();">
+                <a href="#"><span class="nav-hl-blue">Experience&nbsp&nbsp</span></a></li>
+            </li>
+            <li onclick="transformMenu();">
+                <a href="tutorials.html"><span class="nav-hl-green">Tutorials&nbsp&nbsp</span></a></li>
+            <!-- <li onclick="transformMenu();">
+                <a href="blog.html"><span class="nav-hl-yellow">Blog&nbsp&nbsp</span></a></li> -->
+            <li onclick="transformMenu();">
+                <a href="index.html#contact"><span class="nav-hl-yellow">Contact&nbsp&nbsp</span></a></li>
+        </ul>
+    </nav>
 
-            <!--             
+    <article id="experience">
+        <h1><span class="half-highlight-pink">Experience&nbsp</span></h1>
+
+        <br><br>
+
+        <!--             
             <ul>
                 <li>C++</li>
                 <li>Java</li>
@@ -47,36 +50,154 @@
                 <li>CSS</li>
             </ul> -->
 
-            <h2>Bendix Commercial Vehicle Systems - Software Intern</h2>
-            <p>
-                The summer after my freshman year, I interned at Bendix Commercial Vehicle Systems in Irvine, California.
-            </p>
-            <p>
-                Over the course of 10 weeks, I adapted Python's Tkinter and PySerial libraries to design and develop an in-house tool to help engineers experiment with camera image sensors. This project gave me the opportunity to explore Python's object oriented programming.  
-            </p>
-            <p>
-                I also helped design and evaluate the SafetyDirect mobile app which will allow thousands of drivers to record trips in their commercial vehicles. During this project, I learned how to design and construct functional flow charts detailing the relationship between pages and user action. 
-            </p>
-        </article>
+        <div id="experience-body">
+            <div id="bendix" class="experience-content">
+                <div>
+                        <h2>Bendix Commercial Vehicle Systems' R&D Office - Irvine, California</span></h2>
+                        <h3>Software Co-op</h3>
+                        <p>
+                            Over the course of 10 weeks, I had the opportunity to explore different branches of computer
+                            science: embedded software, image processing, mobile application development, and front-end web
+                            development.
+                        </p>
+                        <p>
+                            My primary assignment was to design and develop an in-house tool to help engineers quickly and
+                            easily experiment with camera image sensors:
+                        </p>
+                        <div id="GUI-function-demo-container-horizontal">
+                            <img id="import-export" class="GUI-function-demo-horizontal" src="Website Materials/import.gif">
+                            <img id="binary" class="GUI-function-demo-horizontal" src="Website Materials/binary_display.gif">
+                            <img id="terminal" class="GUI-function-demo-horizontal" src="Website Materials/terminal.gif">
+                        </div>
+        
+                        <figcaption class="GUI-function-demo-caption-horizontal">Quickly import and export hundreds of addresses and values
+                            from CSV files</figcaption>
+                        <figcaption class="GUI-function-demo-caption-horizontal">Effortlessly fine-tune individual bits</figcaption>
+                        <figcaption class="GUI-function-demo-caption-horizontal">Easily enter additional commands through the terminal
+                        </figcaption>
+        
+                        <div id="GUI-function-demo-container-vertical">
+                            <figure>
+                                <img id="import-export" class="GUI-function-demo" src="Website Materials/import.gif">
+                                <figcaption class="GUI-function-demo-caption">Quickly import and export hundreds of addresses and values from CSV files</figcaption>
+                            </figure>
+                            <figure>
+                                <img id="binary" class="GUI-function-demo" src="Website Materials/binary_display.gif">
+                                <figcaption class="GUI-function-demo-caption">Effortlessly fine-tune individual bits
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img id="terminal" class="GUI-function-demo" src="Website Materials/terminal.gif">
+                                <figcaption class="GUI-function-demo-caption">Easily enter additional commands through the terminal</figcaption>
+                            </figure>
+                        </div>
+        
+                        <p>
+                            <!-- This project was my first encounter with real-world software development. My first lesson: when requirements change - developers adapt. -->
+                        </p>
+                        <p>
+                            This tool is designed to assist engineers in stablizing auto-exposure during raw image capture. It
+                            was developed entirely in Python. I adapted Python's <a
+                                href="https://effbot.org/tkinterbook/tkinter-whats-tkinter.htm">Tkinter</a> and <a
+                                href="https://pythonhosted.org/pyserial/pyserial.html#overview">pySerial</a> libraries to build
+                            the GUI (graphic user interface) and to communicate with the hardware respectively.
+                        </p>
+                        <p>
+                            I also helped design and evaluate the SafetyDirect mobile app which will allow thousands of drivers
+                            to record trips in their commercial vehicles.
+        
+                            <!-- During this project, I was introduced to functional flow charts detailing the relationship between pages and user action. -->
+                        </p>
+                        <p>
+                            Additionally, I used HTML, CSS, and JavaScript to initiate the conversion of the FleetDirect Order
+                            Form from its Excel form into a webpage.
+                        </p>
+                </div>
 
-    </body>
-    
-    <script>
-        function transformMenu()
-        {
-            var x = document.getElementById("navigation");
-            var y = document.getElementById("menu-bar")
-            y.classList.toggle("transform");
+                <div id="timeline">
+                    <div class="timeline-line bendix-line"></div>
+                    <p class="italic">Summer 2019</p>
+                    <div class="timeline-line bendix-line"></div>
+                </div>
+            </div>
 
-            if (x.style.visibility === "visible") {
-                x.style.height = "0"
-                x.style.visibility = "hidden";
-                x.style.opacity = 0;
-            } else {
-                x.style.height = "100%"
-                x.style.visibility = "visible";
-                x.style.opacity = 1;
+
+        </div>
+    </article>
+
+</body>
+
+<script>
+
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+
+    function transformMenu() {
+        var x = document.getElementById("navigation");
+        var y = document.getElementById("menu-bar")
+        y.classList.toggle("transform");
+
+        if (x.style.visibility === "visible") {
+            x.style.height = "0"
+            x.style.visibility = "hidden";
+            x.style.opacity = 0;
+        } else {
+            x.style.height = "100%"
+            x.style.visibility = "visible";
+            x.style.opacity = 1;
+        }
+    }
+
+    function timeline_effect() {
+        // timeline effect
+
+        let bendix_content = document.getElementById("bendix");
+        let exp_arr = [bendix_content]
+        let line_height = []
+
+        let bendix_line = document.querySelectorAll(".bendix-line");
+        let line_pairs = [bendix_line]
+
+        let i;
+        for (let i = 0; i < exp_arr.length; i++) {
+            // line_height.push(String(exp_arr[i].offsetHeight * 0.03).concat("px"));
+
+            line_pairs[i][0].style.height = line_height[0];
+            line_pairs[i][1].style.height = String(exp_arr[i].offsetHeight * 0.9).concat("px");
+        }
+    }
+
+    window.onload = function () {
+        triplet_transition()
+    }
+
+    let GUI_function_demo = document.querySelectorAll(".GUI-function-demo-horizontal");
+    let GUI_function_demo_caption = document.querySelectorAll(".GUI-function-demo-caption-horizontal");
+
+    // $(GUI_function_demo).mouseover(function(){
+    //     console.log("over")
+    // });
+
+    async function triplet_transition() {
+        while (window.innerWidth > 1610) {
+            for (let i = 0; i < GUI_function_demo.length; i++) {
+                GUI_function_demo[i].style.height = "400px";
+                GUI_function_demo_caption[i].style.display = "block";
+                await sleep(15000);
+                GUI_function_demo[i].style.height = "200px";
+                GUI_function_demo_caption[i].style.display = "none";
             }
-        } 
-    </script>
+        }
+    }
+
+    $(document).ready(
+        function () {
+            timeline_effect();
+        }
+    );
+
+</script>
+
 </html>
