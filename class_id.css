@@ -268,6 +268,12 @@ figcaption {
     #about {
         flex-direction: column;
     }
+
+    #Garden {
+        height: auto;
+        width: 90%;
+        object-fit: cover;
+    }
 }
 
 @media only screen and (max-width: 1610px) {
